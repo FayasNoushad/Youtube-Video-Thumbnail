@@ -28,3 +28,9 @@ import ytthumb
 
 ytthumb.thumbnail("https://youtu.be/rokGy0huYEA")
 ```
+
+---
+
+## Credits
+
+- [Fayas Noushad](https://github.com/FayasNoushad)
