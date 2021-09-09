@@ -13,7 +13,7 @@ file = pathlib.Path(__file__).parent
 README = (file / "README.md").read_text()
 
 setup = (
-    name="YouTube Video Thumbnail",
+    name="Youtube-Video-Thumbnail",
     version="1.0.0",
     author="FayasNoushad",
     long_description=README,
