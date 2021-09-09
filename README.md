@@ -41,6 +41,16 @@ ytthumb.thumbnail("https://youtu.be/rokGy0huYEA", quality="sd")
 
 ---
 
+## Help
+
+```python
+import ytthumb
+
+help(ytthumb.thumbnail)
+```
+
+---
+
 ## Credits
 
 - [Fayas Noushad](https://github.com/FayasNoushad)
