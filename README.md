@@ -39,6 +39,17 @@ import ytthumb
 ytthumb.thumbnail("https://youtu.be/rokGy0huYEA", quality="sd")
 ```
 
+<details>
+  <summary><b>Available Qualities</b></summary>
+<br/>
+
+- sd - Standard Quality
+- mq - Medium Quality
+- hq - High Quality
+- maxres - Maximum Resolution
+
+</details>
+
 ---
 
 ## Help
