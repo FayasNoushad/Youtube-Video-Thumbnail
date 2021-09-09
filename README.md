@@ -21,3 +21,7 @@ ytthumb.thumbnail("https://youtu.be/rokGy0huYEA")
 ```
 
 ---
+
+## License
+
+**MIT © [Fayas Noushad](https://github.com/FayasNoushad)**
