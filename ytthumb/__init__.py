@@ -2,14 +2,20 @@
 # (C) @FayasNoushad
 # Copyright permission under MIT License
 # All rights reserved by FayasNoushad
-# License -> https://github.com/FayasNoushad/Youtube-Video-Thumbnail/blob/main/LICENSE
+# License -> https://github.com/FayasNoushad/Youtube-Video-Thumbnail/blob/main/
 
-#sd - Standard Definition
-#mq - Medium Quality
-#hq - High Quality
-#maxres - MAXimum RESolution
 
 def thumbnail(video, quality='sd'):
+    """
+    video:
+      id - video id
+      link - video link
+    quality:
+      sd - Standard Quality
+      mq - Medium Quality 
+      hq - High Quality
+      maxres - Maximum Resolution 
+    """
     if ("youtube.com" in video) and ("/" in video) and ("=" in video):
         id = video.split("=")[-1]
     elif ("youtu.be" in video) and ("/" in video):
