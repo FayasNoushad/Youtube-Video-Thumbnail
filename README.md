@@ -11,3 +11,13 @@ pip3 install ytthumb
 ```
 
 ---
+
+## Usage
+
+```python
+import ytthumb
+
+ytthumb.thumbnail("https://youtu.be/rokGy0huYEA")
+```
+
+---
