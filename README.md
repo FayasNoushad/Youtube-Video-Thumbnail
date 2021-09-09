@@ -23,10 +23,20 @@ pip3 install ytthumb
 
 ## Usage
 
+### Basic Usage
+
 ```python
 import ytthumb
 
 ytthumb.thumbnail("https://youtu.be/rokGy0huYEA")
+```
+
+### Advanced Usage
+
+```python
+import ytthumb
+
+ytthumb.thumbnail("https://youtu.be/rokGy0huYEA", quality="sd")
 ```
 
 ---
