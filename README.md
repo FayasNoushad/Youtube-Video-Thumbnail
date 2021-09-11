@@ -28,7 +28,10 @@ pip3 install ytthumb
 ```python
 import ytthumb
 
-ytthumb.thumbnail("https://youtu.be/rokGy0huYEA")
+thumbnail = ytthumb.thumbnail(
+    video="https://youtu.be/rokGy0huYEA"
+)
+print(thumbnail)
 ```
 
 ### Advanced Usage
@@ -36,7 +39,11 @@ ytthumb.thumbnail("https://youtu.be/rokGy0huYEA")
 ```python
 import ytthumb
 
-ytthumb.thumbnail("https://youtu.be/rokGy0huYEA", quality="sd")
+thumbnail = ytthumb.thumbnail(
+    video="https://youtu.be/rokGy0huYEA",
+    quality="sd"
+)
+print(thumbnail)
 ```
 
 <details>
@@ -57,7 +64,8 @@ ytthumb.thumbnail("https://youtu.be/rokGy0huYEA", quality="sd")
 ```python
 import ytthumb
 
-help(ytthumb.thumbnail)
+help = help(ytthumb.thumbnail)
+print(help)
 ```
 
 ---
