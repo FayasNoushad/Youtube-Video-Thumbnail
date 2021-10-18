@@ -68,3 +68,5 @@ print(help)
 
 - [Fayas Noushad](https://github.com/FayasNoushad)
 - [YouTube Thumbnail API](https://img.youtube.com)
+
+---
