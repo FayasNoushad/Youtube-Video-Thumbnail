@@ -20,4 +20,3 @@ def thumbnail(video, quality='sd'):
         quality = 'sd'
     thumbnail = "https://img.youtube.com/vi/" + id + f"/{quality}default.jpg"
     return thumbnail
-
