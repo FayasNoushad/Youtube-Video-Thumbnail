@@ -4,6 +4,7 @@
 # All rights reserved by FayasNoushad
 # License -> https://github.com/FayasNoushad/Youtube-Video-Thumbnail/blob/main/LICENSE
 
+import os
 import pathlib
 from setuptools import setup, find_packages
 
