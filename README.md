@@ -26,6 +26,7 @@ thumbnail = ytthumb.thumbnail(
     video="https://youtu.be/rokGy0huYEA"
 )
 print(thumbnail)
+# => https://img.youtube.com/vi/rokGy0huYEA/sddedault.jpg
 ```
 
 ### Advanced Usage
@@ -37,23 +38,20 @@ thumbnail = ytthumb.thumbnail(
     video="https://youtu.be/rokGy0huYEA",
     quality="sd"
 )
+"""
+Available qualities
+  - sd - Standard Quality
+  - mq - Medium Quality
+  - hq - High Quality
+  - maxres - Maximum Resolution
+"""
+
 print(thumbnail)
-# => https://img.youtube.com/vi/rokGy0huYEA/sddedault.png
+# => https://img.youtube.com/vi/rokGy0huYEA/sddedault.jpg
 
-# Download thumbnail
 download_thumbnail(video, name='thumbnail.jpg', quality='sd')
+# => For download thumbnail "thumbnail.jpg"
 ```
-
-<details>
-  <summary><b>Available Qualities</b></summary>
-<br/>
-
-- sd - Standard Quality
-- mq - Medium Quality
-- hq - High Quality
-- maxres - Maximum Resolution
-
-</details>
 
 ---
 
@@ -64,6 +62,7 @@ import ytthumb
 
 help = help(ytthumb.thumbnail)
 print(help)
+# => For help
 ```
 
 ---
