@@ -1,3 +1,6 @@
+import requests
+
+
 def thumbnail(video, quality='sd'):
     """
     video:
@@ -20,3 +23,22 @@ def thumbnail(video, quality='sd'):
         quality = 'sd'
     thumbnail = "https://img.youtube.com/vi/" + id + f"/{quality}default.jpg"
     return thumbnail
+
+
+def download_thumbnail(video, name='thumbnail.jpg', quality='sd'):
+    """
+    video:
+      id - video id
+      link - video link
+    name:
+      thumbnail name
+    quality:
+      sd - Standard Quality
+      mq - Medium Quality 
+      hq - High Quality
+      maxres - Maximum Resolution 
+    """
+    thumbnail = requests.get(thumbnail(video, quality))
+    with open(name, "wb") as file:
+        file.write(content)
+    return name
