@@ -38,6 +38,10 @@ thumbnail = ytthumb.thumbnail(
     quality="sd"
 )
 print(thumbnail)
+# => https://img.youtube.com/vi/rokGy0huYEA/sddedault.png
+
+# Download thumbnail
+download_thumbnail(video, name='thumbnail.jpg', quality='sd')
 ```
 
 <details>
