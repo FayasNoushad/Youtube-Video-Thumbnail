@@ -17,7 +17,7 @@ README = (file / "README.md").read_text()
 
 setup(
     name="YTThumb",
-    version="1.3.1",
+    version="1.3.2",
     author="FayasNoushad",
     long_description=README,
     long_description_content_type="text/markdown",
