@@ -10,7 +10,7 @@ License -> https://github.com/FayasNoushad/Youtube-Video-Thumbnail/blob/main/LIC
 ## Installation
 
 ```
-pip3 install ytthumb
+pip install ytthumb
 ```
 
 ---
