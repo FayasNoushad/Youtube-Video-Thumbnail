@@ -11,15 +11,19 @@ def requirements(file="requirements.txt") -> list:
         return []
 
 
-file = pathlib.Path(__file__).parent
+def readme(file="README.md"):
+    if os.path.isfile(file):
+        with open(file, encoding="utf8") as r:
+            return r.read()
+    else:
+        return ""
 
-README = (file / "README.md").read_text()
 
 setup(
     name="YTThumb",
     version="1.3.2",
     author="FayasNoushad",
-    long_description=README,
+    long_description=readme(),
     long_description_content_type="text/markdown",
     description="A youtube video link or id to video thumbnail python package.",
     license="MIT",
