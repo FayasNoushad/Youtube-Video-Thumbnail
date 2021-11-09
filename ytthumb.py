@@ -2,7 +2,7 @@ import requests
 
 
 def thumbnail(video, quality='sd'):
-    """
+    '''
     video:
       id - video id
       link - video link
@@ -11,7 +11,7 @@ def thumbnail(video, quality='sd'):
       mq - Medium Quality 
       hq - High Quality
       maxres - Maximum Resolution 
-    """
+    '''
     qualities = ["sd", "mq", "hq", "maxres"]
     if ("youtube.com" in video) and ("/" in video) and ("=" in video):
         id = video.split("=")[-1]
@@ -26,7 +26,7 @@ def thumbnail(video, quality='sd'):
 
 
 def download_thumbnail(video, name='thumbnail.jpg', quality='sd'):
-    """
+    '''
     video:
       id - video id
       link - video link
@@ -37,8 +37,8 @@ def download_thumbnail(video, name='thumbnail.jpg', quality='sd'):
       mq - Medium Quality 
       hq - High Quality
       maxres - Maximum Resolution 
-    """
-    thumbnail = requests.get(thumbnail(video, quality))
+    '''
+    thumbnail = requests.get(thumbnail(video, quality)).content
     with open(name, "wb") as file:
-        file.write(content)
+        file.write(thumbnail)
     return name
