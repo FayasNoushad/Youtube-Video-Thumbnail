@@ -31,19 +31,19 @@ thumbnail = ytthumb.thumbnail(
     video="https://youtu.be/rokGy0huYEA",
     quality="sd"
 )
-'''
-Available qualities
-  - sd - Standard Quality
-  - mq - Medium Quality
-  - hq - High Quality
-  - maxres - Maximum Resolution
-'''
 print(thumbnail)
 # => https://img.youtube.com/vi/rokGy0huYEA/sddedault.jpg
 
+# Available Qualities
+print(ytthumb.qualities())
+# => ["sd", "mq", "hq", "maxres"]
 
-download_thumbnail(video, name='thumbnail.jpg', quality='sd')
-# => For download thumbnail "thumbnail.jpg"
+# Download Thumbnail
+ytthumb.download_thumbnail(
+    video,
+    name='thumbnail.jpg'
+)
+# => Download thumbnail in 'thumbnail.jpg'
 ```
 
 ---
