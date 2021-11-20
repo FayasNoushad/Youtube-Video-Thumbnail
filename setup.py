@@ -1,9 +1,8 @@
 import os
-import pathlib
-from setuptools import setup, find_packages
+import setuptools
 
 
-def requirements(file="requirements.txt") -> list:
+def requirements(file="requirements.txt"):
     if os.path.isfile(file):
         with open(file, encoding="utf-8") as r:
             return [i.strip() for i in r]
@@ -19,21 +18,21 @@ def readme(file="README.md"):
         return ""
 
 
-setup(
+setuptools.setup(
     name="YTThumb",
-    version="1.3.6",
-    author="FayasNoushad",
+    version="1.3.7",
+    description="YouTube video thumbnail download",
     long_description=readme(),
     long_description_content_type="text/markdown",
-    description="A youtube video link or id to video thumbnail python module",
-    license="MIT",
     url="https://github.com/FayasNoushad/Youtube-Video-Thumbnail",
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    packages=find_packages(),
+    license="MIT",
+    author="Fayas Noushad",
+    author_email="contact@fayas.me",
+    packages=setuptools.find_packages(),
     install_requires=requirements(),
-    python_requires=">=3.6"
+    python_requires=">=3.6",
+    classifiers=[
+        "Programming Language :: Python",
+        "License :: OSI Approved :: MIT License"
+    ]
 )
