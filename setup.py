@@ -20,7 +20,7 @@ def readme(file="README.md"):
 
 setuptools.setup(
     name="YTThumb",
-    version="1.3.8",
+    version="1.3.9",
     description="YouTube video thumbnail download",
     long_description=readme(),
     long_description_content_type="text/markdown",
@@ -38,7 +38,7 @@ setuptools.setup(
     ],
     project_urls={
         "Tracker": "https://github.com/FayasNoushad/Youtube-Video-Thumbnail/issues",
-        "Source": "https://github.com/FayasNoushad",
+        "Source": "https://github.com/FayasNoushad/Youtube-Video-Thumbnail",
         "Documentation": "https://ytthumb.projects.fayas.me",
     },
     python_requires=">=3.6",
