@@ -21,7 +21,7 @@ def readme(file="README.md"):
 
 setup(
     name="YTThumb",
-    version="1.3.5",
+    version="1.3.6",
     author="FayasNoushad",
     long_description=readme(),
     long_description_content_type="text/markdown",
