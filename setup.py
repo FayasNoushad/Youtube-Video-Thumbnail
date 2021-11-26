@@ -20,15 +20,12 @@ def readme(file="README.md"):
 
 setuptools.setup(
     name="YTThumb",
-    version="1.3.9",
+    version="1.4.0",
     description="YouTube video thumbnail download",
     long_description=readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/FayasNoushad/Youtube-Video-Thumbnail",
-    download_url="https://github.com/FayasNoushad/Youtube-Video-Thumbnail/releases/latest",
     license="MIT",
     author="Fayas Noushad",
-    author_email="contact@fayas.me",
     classifiers=[
         "Intended Audience :: Developers",
         "Natural Language :: English",
@@ -38,10 +35,10 @@ setuptools.setup(
     ],
     project_urls={
         "Tracker": "https://github.com/FayasNoushad/Youtube-Video-Thumbnail/issues",
-        "Source": "https://github.com/FayasNoushad/Youtube-Video-Thumbnail",
-        "Documentation": "https://ytthumb.projects.fayas.me",
+        "Source": "https://github.com/FayasNoushad/Youtube-Video-Thumbnail"
     },
     python_requires=">=3.6",
+    py_modules=['ytthumb'],
     packages=setuptools.find_packages(),
     zip_safe=False,
     install_requires=requirements()
