@@ -1,5 +1,4 @@
 # YouTube Video Thumbnail
-
 A simple youtube video thumbnail downloader with more qualities via youtube video link or id.
 
 ## Installation
