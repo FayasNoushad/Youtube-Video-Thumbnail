@@ -5,7 +5,6 @@ import ytthumb
 
 
 # Get Thumbnail
-thumbnail = ytthumb.thumbnail('https://youtu.be/rokGy0huYEA')
 thumbnail = ytthumb.thumbnail(
     video="https://youtu.be/rokGy0huYEA",  # You can alse add id
     quality="sd"  # Not required
