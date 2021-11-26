@@ -1,35 +1,14 @@
-```
-Made with Python3
-(C) @FayasNoushad
-Copyright permission under MIT License
-License -> https://github.com/FayasNoushad/Youtube-Video-Thumbnail/blob/main/LICENSE
-```
-
----
-
-## Installation
-
-```
-pip install YTThumb
-```
-
----
-
-## Usage
+# YouTube Video Thumbnail
 
 ```py
 import ytthumb
 
 
-# Basic Usage
+# Get Thumbnail
 thumbnail = ytthumb.thumbnail('https://youtu.be/rokGy0huYEA')
-print(thumbnail)
-# => https://img.youtube.com/vi/rokGy0huYEA/sddedault.jpg
-
-# Advanced Usage
 thumbnail = ytthumb.thumbnail(
-    video="https://youtu.be/rokGy0huYEA",
-    quality="sd"
+    video="https://youtu.be/rokGy0huYEA",  # You can alse add id
+    quality="sd"  # Not required
 )
 print(thumbnail)
 # => https://img.youtube.com/vi/rokGy0huYEA/sddedault.jpg
@@ -41,15 +20,22 @@ print(ytthumb.qualities())
 # Download Thumbnail
 ytthumb.download_thumbnail(
     video,
-    name='thumbnail.jpg'
+    name='thumbnail.jpg',  # Not required
+    quality='sd'  # Not required
 )
 # => Download thumbnail in 'thumbnail.jpg'
 ```
 
----
+## Installation
 
-## Credits
+```
+pip install YTThumb
+```
 
-- [Fayas Noushad](https://github.com/FayasNoushad)
+## Features
 
----
+- YouTube video link/id to thumbnail
+  - Quality select option
+- YouTube video link/id to download thumbnail
+  - Quality select option
+  - Custom name
