@@ -1,7 +1,6 @@
 import requests
 
 
-
 def extract_id(video):
     
     # extract the id
@@ -14,10 +13,24 @@ def extract_id(video):
     return id
 
 
-def qualities():
-    
-    # qualities of thumbnail
-    qualities = ["sd", "mq", "hq", "maxres"]
+def qualities(json=True):
+    '''
+    json:
+      True - for return qualities and full form as json (default)
+      False - for return only qualities as list
+    '''
+    json_qualities = {
+        "sd": "Standard Quality",
+        "mq": "Medium Quality",
+        "hq": "High Quality",
+        "maxres": "Maximum Resolution"
+    }
+    if not json:
+        qualities = []
+        for i in json_qualities:
+            qualities.append(i)
+    else:
+        qualities = json_qualities
     return qualities
 
 

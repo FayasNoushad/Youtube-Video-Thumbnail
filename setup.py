@@ -20,7 +20,7 @@ def readme(file="README.md"):
 
 setuptools.setup(
     name="YTThumb",
-    version="1.4.4",
+    version="1.4.5",
     description="YouTube video thumbnail downloader",
     long_description=readme(),
     long_description_content_type="text/markdown",
