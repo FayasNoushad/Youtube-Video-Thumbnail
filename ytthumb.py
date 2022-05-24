@@ -15,7 +15,11 @@ def extract_id(video):
 
 
 def qualities(json=True):
-    
+    '''
+    json:
+      True - for return qualities and full form as json (default)
+      False - for return only qualities as list
+    '''
     # qualities of thumbnail
     json_qualities = {
         "sd": "Standard Quality",
