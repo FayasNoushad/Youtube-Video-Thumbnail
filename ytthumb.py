@@ -1,7 +1,6 @@
 import requests
 
 
-
 def extract_id(video):
     
     # extract the id
