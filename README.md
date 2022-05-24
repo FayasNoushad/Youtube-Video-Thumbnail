@@ -34,8 +34,11 @@ print(thumbnail)
 ```py
 import ytthumb
 
-print(ytthumb.qualities())
-# returns list of qualities
+print(ytthumb.qualities())  # json=True (default)
+# returns list of qualities with full form as json
+
+print(ytthumb.qualities(json=False))
+# returns list of qualities as list
 ```
 
 ### Download Thumbnail
