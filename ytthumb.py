@@ -14,10 +14,21 @@ def extract_id(video):
     return id
 
 
-def qualities():
+def qualities(json=True):
     
     # qualities of thumbnail
-    qualities = ["sd", "mq", "hq", "maxres"]
+    json_qualities = {
+        "sd": "Standard Quality",
+        "mq": "Medium Quality",
+        "hq": "High Quality",
+        "maxres": "Maximum Resolution"
+    }
+    if not json:
+        qualities = []
+        for i in json_qualities:
+            qualities.append(i)
+    else:
+        qualities = json_qualities
     return qualities
 
 
